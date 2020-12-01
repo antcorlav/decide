@@ -9,8 +9,8 @@ services:
       - db:/var/lib/postgresql/data
     networks:
       - decide
-    enviroment:
-      - POSTGRES_PASSWORD= complexpassword
+    environment:
+      - POSTGRES_PASSWORD=postgres
   web:
     restart: always
     container_name: decide_web
